@@ -1,0 +1,17 @@
+.recipe-details-page {
+  background: linear-gradient(135deg, #fffdf7 0%, #fce8d8 100%);
+  min-height: 100vh;
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
+}
+
+.recipe-details-page h4 {
+  font-family: "Poppins", sans-serif;
+  color: #333;
+}
+
+.app-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}

@@ -1,0 +1,43 @@
+:root{
+--brand: #ff6b6b;
+--muted: #6c757d;
+--glass: rgba(255,255,255,0.6);
+}
+
+
+*{ box-sizing: border-box; }
+body{
+font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+background: linear-gradient(180deg,#fff 0%, #f8fbff 100%);
+min-height: 100vh;
+margin:0;
+}
+
+
+.app-container{
+padding: 2rem 1rem;
+}
+
+
+.card-recipe{ border-radius: 12px; overflow: hidden; box-shadow: 0 8px 24px rgba(13,38,59,0.08); }
+.card-recipe img{ height:180px; object-fit:cover; }
+
+
+.search-wrapper{ max-width:900px; margin: 0 auto 1.25rem; }
+
+
+.fav-badge{ position: absolute; right:8px; top:8px; z-index:5; }
+
+
+.recipe-grid{ display:grid; grid-template-columns: repeat(auto-fill,minmax(240px,1fr)); gap: 1rem; }
+
+
+.header-hero{ padding:2rem 1rem; text-align:center; }
+.header-hero h1{ font-weight:700; margin-bottom:6px; }
+.header-hero p{ color:var(--muted); }
+
+
+/* small responsive tweaks */
+@media (max-width:576px){
+.card-recipe img{ height:140px }
+}
